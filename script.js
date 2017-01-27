@@ -4,7 +4,7 @@ var request = new XMLHttpRequest();
 loadData();
 
 function loadData() {
-  request.open('GET', 'https://opentdb.com/api.php?amount=10&type=multiple');
+  request.open('GET', 'https://opentdb.com/api.php?amount=1&category=20&type=multiple');
   request.onload = loadComplete;
   request.send();
 }
