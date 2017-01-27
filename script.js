@@ -4,7 +4,7 @@ var request = new XMLHttpRequest();
 loadData();
 
 function loadData() {
-  request.open('GET', 'https://opentdb.com/api.php?amount=10&type=multiple');
+  request.open('GET', 'https://opentdb.com/api.php?amount=1&type=multiple&category=20');
   request.onload = loadComplete;
   request.send();
 }
@@ -19,5 +19,4 @@ function loadComplete(evt) {
     document.getElementById("incorrect2").innerHTML = triviaData.results[0].incorrect_answers[1];
     document.getElementById("incorrect3").innerHTML = triviaData.results[0].incorrect_answers[2];
     
-
 }
